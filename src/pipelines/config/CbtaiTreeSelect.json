@@ -1,0 +1,478 @@
+{
+  "importNameModdule": {
+    "@craftjs/core": [
+      "useNode"
+    ],
+    "uuid": [
+      "v4"
+    ],
+    "antd": [
+      "Form",
+      "Select",
+      "Switch",
+      "Radio",
+      "Checkbox",
+      "Slider",
+      "Input",
+      "Typography",
+      "InputNumber",
+      "DatePicker",
+      "TreeSelect"
+    ],
+    "react": [
+      "useEffect",
+      "useState",
+      "useContext"
+    ],
+    "react-router-dom": [
+      "useNavigate"
+    ],
+    "@/tools": [
+      "EventService",
+      "getUserName",
+      "parse_menuProps",
+      "parse_menuItems",
+      "parse_func",
+      "parse_icon",
+      "parse_timelineItems",
+      "parse_listSource",
+      "parse_renderItem",
+      "parse_tableColumns",
+      "parse_reference",
+      "parse_transforRender",
+      "parse_transforOnChange",
+      "parse_transforTarget",
+      "parse_eventTargetValue",
+      "parse_info",
+      "parse_eventTargetChecked",
+      "parse_reactNode",
+      "parse_tableOnRow",
+      "parse_dayjs",
+      "parse_countProps",
+      "parse_markProps",
+      "parse_progressProps",
+      "parse_tabsProps",
+      "parse_menuOnClick",
+      "parse_typographyOnClick",
+      "parse_function"
+    ],
+    "@/context": [
+      "useAppConfig",
+      "useWebSocket",
+      "useProject",
+      "usePagesData"
+    ],
+    "@/ide": [
+      "DictItemTree",
+      "DoubleInput"
+    ],
+    "@/hooks": [
+      "useCraftJS",
+      "useWebrtc"
+    ],
+    "@/pipelines/cbtai": [
+      "DynamicAntdIcon"
+    ]
+  },
+  "importDefaultModdule": {
+    "react": "React"
+  },
+  "userName": "Cbtai",
+  "innerModule": "antd",
+  "innerComponent": "TreeSelect",
+  "compProps": [
+    "className",
+    "dataevent",
+    "children"
+  ],
+  "customProps": [
+    {
+      "label": "是否禁用",
+      "name": "disabled",
+      "type": "switch",
+      "options": [],
+      "defaultValue": false
+    },
+    {
+      "label": "是否允许清除",
+      "name": "allowClear",
+      "type": "switch",
+      "options": [],
+      "defaultValue": false
+    },
+    {
+      "label": "多选模式下值被选择，是否自动清空搜索框",
+      "name": "autoClearSearchValue",
+      "type": "switch",
+      "options": [],
+      "defaultValue": true
+    },
+    {
+      "label": "弹窗滚动高度",
+      "name": "listHeight",
+      "type": "input",
+      "options": [],
+      "defaultValue": "256"
+    },
+    {
+      "label": "可选中的最多items数量",
+      "name": "maxCount",
+      "type": "input",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "label": "最多显示多少个tag",
+      "name": "maxTagCount",
+      "type": "input",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "label": "是否支持多选",
+      "name": "multiple",
+      "type": "switch",
+      "options": [],
+      "defaultValue": false
+    },
+    {
+      "label": "选择框默认文字",
+      "name": "placeholder",
+      "type": "input",
+      "options": [],
+      "defaultValue": "",
+      "isState": true
+    },
+    {
+      "label": "选择框弹出的位置",
+      "name": "placement",
+      "type": "select",
+      "options": [
+        {
+          "label": "左下（默认）",
+          "value": "bottomLeft"
+        },
+        {
+          "label": "右下",
+          "value": "bottomRight"
+        },
+        {
+          "label": "左上",
+          "value": "topLeft"
+        },
+        {
+          "label": "右上",
+          "value": "topRight"
+        }
+      ],
+      "defaultValue": ""
+    },
+    {
+      "label": "自定义前缀",
+      "name": "prefix",
+      "type": "input",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "label": "选中项回填的方式",
+      "name": "showCheckedStrategy",
+      "type": "input",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "label": "是否支持搜索框",
+      "name": "showSearch",
+      "type": "switch",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "label": "选择框大小",
+      "name": "size",
+      "type": "select",
+      "options": [
+        {
+          "label": "大",
+          "value": "large"
+        },
+        {
+          "label": "中",
+          "value": "middle"
+        },
+        {
+          "label": "小",
+          "value": "small"
+        }
+      ],
+      "defaultValue": ""
+    },
+    {
+      "label": "校验状态",
+      "name": "status",
+      "type": "select",
+      "options": [
+        {
+          "label": "错误",
+          "value": "error"
+        },
+        {
+          "label": "警告",
+          "value": "warning"
+        }
+      ],
+      "defaultValue": ""
+    },
+    {
+      "label": "是否显示CheckBox",
+      "name": "treeCheckable",
+      "type": "switch",
+      "options": [],
+      "defaultValue": false
+    },
+    {
+      "label": "是否使用简单格式的treeData",
+      "name": "treeDataSimpleMode",
+      "type": "switch",
+      "options": [],
+      "defaultValue": false
+    },
+    {
+      "label": "是否默认展开所有树节点",
+      "name": "treeDefaultExpandAll",
+      "type": "switch",
+      "options": [],
+      "defaultValue": false
+    },
+    {
+      "label": "点击节点title时的展开逻辑",
+      "name": "treeExpandAction",
+      "type": "select",
+      "options": [
+        {
+          "label": "无效（默认）",
+          "value": "false"
+        },
+        {
+          "label": "单击",
+          "value": "click"
+        },
+        {
+          "label": "双击",
+          "value": "doubleClick"
+        }
+      ],
+      "defaultValue": ""
+    },
+    {
+      "label": "是否展示TreeNode title前的图标",
+      "name": "treeIcon",
+      "type": "switch",
+      "options": [],
+      "defaultValue": false
+    },
+    {
+      "label": "是否展示线条样式",
+      "name": "treeLine",
+      "type": "switch",
+      "options": [],
+      "defaultValue": false
+    },
+    {
+      "label": "输入项过滤对应的treeNode属性",
+      "name": "treeNodeFilterProp",
+      "type": "input",
+      "options": [],
+      "defaultValue": "value"
+    },
+    {
+      "label": "作为显示的prop设置",
+      "name": "treeNodeLabelProp",
+      "type": "input",
+      "options": [],
+      "defaultValue": "title"
+    },
+    {
+      "label": "当前选中的条目",
+      "name": "value",
+      "type": "input",
+      "options": [],
+      "defaultValue": "",
+      "isState": true
+    },
+    {
+      "label": "形态变体",
+      "name": "variant",
+      "type": "select",
+      "options": [
+        {
+          "label": "外边框",
+          "value": "outlined"
+        },
+        {
+          "label": "无边框",
+          "value": "borderless"
+        },
+        {
+          "label": "背景填充",
+          "value": "filled"
+        },
+        {
+          "label": "下边框",
+          "value": "underlined"
+        }
+      ],
+      "defaultValue": ""
+    },
+    {
+      "label": "是否设置false时关闭虚拟滚动",
+      "name": "virtual",
+      "type": "switch",
+      "options": [],
+      "defaultValue": true
+    },
+    {
+      "label": "展开下拉菜单的回调",
+      "name": "onDropdownVisibleChange",
+      "type": "input",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "label": "文本框值变化时的回调",
+      "name": "onSearch",
+      "type": "input",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "label": "被选中时调用",
+      "name": "onSelect",
+      "type": "input",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "label": "展示节点时调用",
+      "name": "onTreeExpand",
+      "type": "input",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "label": "下拉列表滚动时的回调",
+      "name": "onPopupScroll",
+      "type": "input",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "label": "自定义的选择框后缀图标",
+      "name": "suffixIcon",
+      "type": "icon",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": true,
+      "isFunc": false,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    },
+    {
+      "label": "自定义树节点的展开/折叠图标",
+      "name": "switcherIcon",
+      "type": "icon",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": true,
+      "isFunc": false,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    },
+    {
+      "label": "默认选择的条目",
+      "name": "defaultValue",
+      "type": "input",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": false,
+      "isFunc": false,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    },
+    {
+      "label": "treeNodes 数据",
+      "name": "treeData",
+      "type": "menuItems",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": true,
+      "isFunc": false,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": true
+    },
+    {
+      "label": "选中树节点时调用此函数",
+      "name": "onChange",
+      "type": "info",
+      "options": [
+        "changeValueState"
+      ],
+      "defaultValue": "",
+      "isTemp": true,
+      "isFunc": false,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    }
+  ],
+  "states": [
+    {
+      "key": "valueState",
+      "capKey": "ValueState",
+      "defaultValue": "",
+      "type": "string",
+      "children": []
+    },
+    {
+      "key": "placeholderState",
+      "capKey": "PlaceholderState",
+      "defaultValue": "",
+      "type": "string",
+      "children": []
+    },
+    {
+      "key": "treeDataState",
+      "capKey": "TreeDataState",
+      "defaultValue": "",
+      "type": "array",
+      "children": []
+    }
+  ],
+  "defaultProps": {
+    "disabled": false,
+    "children": "确认"
+  },
+  "parentComponent": "",
+  "sonComponent": "TreeSelect",
+  "isCanvas": false,
+  "needWrap": true,
+  "haveChildren": true,
+  "importType": {
+    "antd": [
+      "FormProps",
+      "SelectProps",
+      "SwitchProps",
+      "RadioProps",
+      "CheckboxProps",
+      "SiderProps",
+      "InputProps",
+      "TypographyProps",
+      "MenuProps"
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "importNameModdule": {
+    "@craftjs/core": [
+      "useNode"
+    ],
+    "antd": [
+      "Form",
+      "Select",
+      "Switch",
+      "Radio",
+      "Checkbox",
+      "Slider",
+      "Input",
+      "Typography",
+      "Affix"
+    ],
+    "react": [
+      "useEffect",
+      "useState"
+    ],
+    "@/tools": [
+      "EventService"
+    ],
+    "@/context": [
+      "useWebSocket"
+    ]
+  },
+  "importDefaultModdule": {
+    "react": "React"
+  },
+  "userName": "Cbtai",
+  "innerModule": "antd",
+  "innerComponent": "Affix",
+  "compProps": [
+    "className",
+    "dataEvent",
+    "children"
+  ],
+  "customProps": [
+    {
+      "label": "距离窗口底部达到指定偏移量后触发",
+      "name": "offsetBottom",
+      "type": "input",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "label": "距离窗口顶部达到指定偏移量后触发",
+      "name": "offsetTop",
+      "type": "input",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "label": "监听滚动事件的元素",
+      "name": "target",
+      "type": "input",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "label": "固定状态改变时触发的回调函数",
+      "name": "onChange",
+      "type": "input",
+      "options": [],
+      "defaultValue": ""
+    }
+  ],
+  "states": [],
+  "defaultProps": {
+    "disabled": false,
+    "children": "确认"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "importNameModdule": {
+    "@craftjs/core": [
+      "useNode"
+    ],
+    "uuid": [
+      "v4"
+    ],
+    "antd": [
+      "Form",
+      "Select",
+      "Switch",
+      "Radio",
+      "Checkbox",
+      "Slider",
+      "Input",
+      "Typography",
+      "InputNumber",
+      "DatePicker",
+      "Tag"
+    ],
+    "react": [
+      "useEffect",
+      "useState",
+      "useContext"
+    ],
+    "react-router-dom": [
+      "useNavigate"
+    ],
+    "@/tools": [
+      "EventService",
+      "getUserName",
+      "parse_menuProps",
+      "parse_menuItems",
+      "parse_func",
+      "parse_icon",
+      "parse_timelineItems",
+      "parse_listSource",
+      "parse_renderItem",
+      "parse_tableColumns",
+      "parse_reference",
+      "parse_transforRender",
+      "parse_transforOnChange",
+      "parse_transforTarget",
+      "parse_eventTargetValue",
+      "parse_info",
+      "parse_eventTargetChecked",
+      "parse_reactNode",
+      "parse_tableOnRow",
+      "parse_dayjs",
+      "parse_countProps",
+      "parse_markProps",
+      "parse_progressProps",
+      "parse_tabsProps",
+      "parse_menuOnClick",
+      "parse_typographyOnClick",
+      "parse_function"
+    ],
+    "@/context": [
+      "useAppConfig",
+      "useWebSocket",
+      "useProject",
+      "usePagesData"
+    ],
+    "@/ide": [
+      "DictItemTree",
+      "DoubleInput"
+    ],
+    "@/hooks": [
+      "useCraftJS",
+      "useWebrtc"
+    ],
+    "@/pipelines/cbtai": [
+      "DynamicAntdIcon"
+    ]
+  },
+  "importDefaultModdule": {
+    "react": "React"
+  },
+  "userName": "Cbtai",
+  "innerModule": "antd",
+  "innerComponent": "Tag",
+  "compProps": [
+    "className",
+    "dataevent",
+    "children"
+  ],
+  "customProps": [
+    {
+      "label": "是否有边框",
+      "name": "bordered",
+      "type": "switch",
+      "options": [],
+      "defaultValue": true,
+      "isTemp": false
+    },
+    {
+      "label": "设置图标",
+      "name": "icon",
+      "type": "icon",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": true,
+      "isState": true
+    },
+    {
+      "label": "自定义关闭按钮",
+      "name": "closeIcon",
+      "type": "icon",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": true,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    },
+    {
+      "label": "标签色",
+      "name": "color",
+      "type": "input",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": false,
+      "isFunc": false,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": true
+    }
+  ],
+  "states": [
+    {
+      "key": "childrenState",
+      "capKey": "ChildrenState",
+      "defaultValue": "",
+      "type": "string",
+      "children": []
+    },
+    {
+      "key": "iconState",
+      "capKey": "IconState",
+      "defaultValue": "",
+      "type": "string",
+      "children": []
+    },
+    {
+      "key": "colorState",
+      "capKey": "ColorState",
+      "defaultValue": "",
+      "type": "string",
+      "children": []
+    }
+  ],
+  "defaultProps": {
+    "type": "primary",
+    "disabled": false,
+    "children": "确认"
+  },
+  "parentComponent": "",
+  "sonComponent": "Tag",
+  "isCanvas": false,
+  "needWrap": false,
+  "haveChildren": true,
+  "isNative": false,
+  "importType": {
+    "antd": [
+      "FormProps",
+      "SelectProps",
+      "SwitchProps",
+      "RadioProps",
+      "CheckboxProps",
+      "SiderProps",
+      "InputProps",
+      "TypographyProps",
+      "MenuProps"
+    ]
+  }
+}

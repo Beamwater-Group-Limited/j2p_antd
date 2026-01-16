@@ -1,0 +1,234 @@
+{
+  "importNameModdule": {
+    "@craftjs/core": [
+      "useNode"
+    ],
+    "uuid": [
+      "v4"
+    ],
+    "antd": [
+      "Form",
+      "Select",
+      "Switch",
+      "Radio",
+      "Checkbox",
+      "Slider",
+      "Input",
+      "Typography",
+      "InputNumber",
+      "DatePicker",
+      "Progress"
+    ],
+    "react": [
+      "useEffect",
+      "useState",
+      "useContext"
+    ],
+    "react-router-dom": [
+      "useNavigate"
+    ],
+    "@/tools": [
+      "EventService",
+      "getUserName",
+      "parse_menuProps",
+      "parse_menuItems",
+      "parse_func",
+      "parse_icon",
+      "parse_timelineItems",
+      "parse_listSource",
+      "parse_renderItem",
+      "parse_tableColumns",
+      "parse_reference",
+      "parse_transforRender",
+      "parse_transforOnChange",
+      "parse_transforTarget",
+      "parse_eventTargetValue",
+      "parse_info",
+      "parse_eventTargetChecked",
+      "parse_reactNode",
+      "parse_tableOnRow",
+      "parse_dayjs",
+      "parse_countProps",
+      "parse_markProps",
+      "parse_progressProps",
+      "parse_tabsProps",
+      "parse_menuOnClick",
+      "parse_typographyOnClick",
+      "parse_function"
+    ],
+    "@/context": [
+      "useAppConfig",
+      "useWebSocket",
+      "useProject",
+      "usePagesData"
+    ],
+    "@/ide": [
+      "DictItemTree",
+      "DoubleInput"
+    ],
+    "@/hooks": [
+      "useCraftJS",
+      "useWebrtc"
+    ],
+    "@/pipelines/cbtai": [
+      "DynamicAntdIcon"
+    ]
+  },
+  "importDefaultModdule": {
+    "react": "React"
+  },
+  "importType": {
+    "antd": [
+      "FormProps",
+      "SelectProps",
+      "SwitchProps",
+      "RadioProps",
+      "CheckboxProps",
+      "SiderProps",
+      "InputProps",
+      "TypographyProps",
+      "MenuProps"
+    ]
+  },
+  "parentComponent": "",
+  "sonComponent": "Progress",
+  "userName": "Cbtai",
+  "innerModule": "antd",
+  "innerComponent": "Progress",
+  "compProps": [
+    "className",
+    "dataevent",
+    "children"
+  ],
+  "customProps": [
+    {
+      "label": "百分比",
+      "name": "percent",
+      "type": "inputNumber",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": false,
+      "isAsync": false,
+      "isState": true
+    },
+    {
+      "label": "是否显示进度数值或状态图标",
+      "name": "showInfo",
+      "type": "switch",
+      "options": [],
+      "defaultValue": true,
+      "isTemp": false,
+      "isAsync": false
+    },
+    {
+      "label": "状态",
+      "name": "status",
+      "type": "radio",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": false,
+      "isAsync": false,
+      "isState": true
+    },
+    {
+      "label": "进度条的样式",
+      "name": "strokeLinecap",
+      "type": "radio",
+      "options": [
+        {
+          "label": "端点圆头",
+          "value": "round"
+        },
+        {
+          "label": "端点平头",
+          "value": "butt"
+        },
+        {
+          "label": "端点方头",
+          "value": "square"
+        }
+      ],
+      "defaultValue": "",
+      "isTemp": false,
+      "isAsync": false
+    },
+    {
+      "label": "进度条类型",
+      "name": "type",
+      "type": "radio",
+      "options": [
+        {
+          "label": "进度条",
+          "value": "line"
+        },
+        {
+          "label": "进度圈",
+          "value": "circle"
+        },
+        {
+          "label": "仪表盘",
+          "value": "dashboard"
+        }
+      ],
+      "defaultValue": "",
+      "isTemp": false,
+      "isAsync": false
+    },
+    {
+      "label": "成功进度条相关配置",
+      "name": "success",
+      "type": "menuProps",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": true,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    },
+    {
+      "label": "进度数值位置",
+      "name": "percentPosition",
+      "type": "menuProps",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": true,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    },
+    {
+      "label": "进度条的色彩",
+      "name": "strokeColor",
+      "type": "input",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": false,
+      "isFunc": false,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    }
+  ],
+  "states": [
+    {
+      "key": "statusState",
+      "capKey": "StatusState",
+      "defaultValue": "",
+      "type": "string",
+      "children": []
+    },
+    {
+      "key": "percentState",
+      "capKey": "PercentState",
+      "defaultValue": "",
+      "type": "number",
+      "children": []
+    }
+  ],
+  "isCanvas": false,
+  "needWrap": false,
+  "haveChildren": true,
+  "defaultProps": {
+    "disabled": false
+  }
+}

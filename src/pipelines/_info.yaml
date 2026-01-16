@@ -1,0 +1,11 @@
+{
+  "name": "pipelines",
+  "accessible": "private",
+  "sub_type": "folder_list",
+  "sub_keys": [
+    "ide",
+    "config",
+    "cbtai"
+  ],
+  "custom_attr": {}
+}

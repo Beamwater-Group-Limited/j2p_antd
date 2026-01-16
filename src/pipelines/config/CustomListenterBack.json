@@ -1,0 +1,59 @@
+{
+  "importNameModdule": {
+    "@craftjs/core": ["useNode"],
+    "react": ["useEffect", "useState", "useContext"],
+    "react-router-dom": ["useNavigate"],
+    "@/tools": [
+      "EventService",
+      "parse_func",
+      "parse_function",
+      "parse_eventTargetValue",
+      "parse_eventTargetChecked"
+    ],
+    "@/context": ["useAppConfig", "useWebSocket", "useProject", "usePagesData"],
+    "@/ide": ["DoubleInput"],
+    "@/hooks": ["useCraftJS"]
+  },
+  "importDefaultModdule": {
+    "react": "React"
+  },
+  "userName": "Cbtai",
+  "innerModule": "YOUR_INNER_MODULE",
+  "innerComponent": "CustomListenterBack",
+  "compProps": ["className", "dataevent", "children"],
+  "customProps": [],
+  "states": [
+    {
+      "key": "backChangeState",
+      "capKey": "backChangeState",
+      "defaultValue": "",
+      "type": "string",
+      "children": []
+    }
+  ],
+  "defaultProps": {
+    "children": ""
+  },
+  "parentComponent": "",
+  "isCanvas": false,
+  "needWrap": false,
+  "haveChildren": true,
+  "sonComponent": "CustomListenterBack",
+  "isNative": false,
+  "importType": {
+    "antd": []
+  },
+  "cbtaiParams": [
+    "sendEvent",
+    "nodeID",
+    "cbtState",
+    "setCbtState",
+    "sendStateChange",
+    "React",
+    "CbtaiAntd",
+    "navigate",
+    "workMode",
+    "appConfig",
+    "projectConfig"
+  ]
+}

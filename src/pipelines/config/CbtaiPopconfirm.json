@@ -1,0 +1,239 @@
+{
+  "importNameModdule": {
+    "@craftjs/core": [
+      "useNode"
+    ],
+    "uuid": [
+      "v4"
+    ],
+    "antd": [
+      "Form",
+      "Select",
+      "Switch",
+      "Radio",
+      "Checkbox",
+      "Slider",
+      "Input",
+      "Typography",
+      "InputNumber",
+      "DatePicker",
+      "Popconfirm"
+    ],
+    "react": [
+      "useEffect",
+      "useState",
+      "useContext"
+    ],
+    "react-router-dom": [
+      "useNavigate"
+    ],
+    "@/tools": [
+      "EventService",
+      "getUserName",
+      "parse_menuProps",
+      "parse_menuItems",
+      "parse_icon",
+      "parse_timelineItems",
+      "parse_listSource",
+      "parse_renderItem",
+      "parse_tableColumns",
+      "parse_eventTargetValue",
+      "parse_info",
+      "parse_eventTargetChecked",
+      "parse_reactNode",
+      "parse_dayjs",
+      "parse_countProps",
+      "parse_menuOnClick",
+      "parse_typographyOnClick",
+      "parse_function"
+    ],
+    "@/context": [
+      "useAppConfig",
+      "useWebSocket",
+      "useProject",
+      "usePagesData"
+    ],
+    "@/ide": [
+      "DictItemTree"
+    ],
+    "@/hooks": [
+      "useCraftJS"
+    ],
+    "@/pipelines/cbtai": [
+      "DynamicAntdIcon"
+    ]
+  },
+  "importDefaultModdule": {
+    "react": "React"
+  },
+  "importType": {
+    "antd": [
+      "FormProps",
+      "SelectProps",
+      "SwitchProps",
+      "RadioProps",
+      "CheckboxProps",
+      "SiderProps",
+      "InputProps",
+      "TypographyProps",
+      "MenuProps"
+    ]
+  },
+  "parentComponent": "",
+  "sonComponent": "Popconfirm",
+  "userName": "Cbtai",
+  "innerModule": "antd",
+  "innerComponent": "Popconfirm",
+  "compProps": [
+    "className",
+    "dataevent",
+    "children"
+  ],
+  "customProps": [
+    {
+      "label": "确认框标题",
+      "name": "title",
+      "type": "input",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": false,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": true
+    },
+    {
+      "label": "确认内容的详细描述",
+      "name": "description",
+      "type": "input",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": false,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": true
+    },
+    {
+      "label": "确认按钮文字",
+      "name": "okText",
+      "type": "input",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": false,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    },
+    {
+      "label": "取消按钮文字",
+      "name": "cancelText",
+      "type": "input",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": false,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    },
+    {
+      "label": "是否显示取消按钮",
+      "name": "showCancel",
+      "type": "switch",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": false,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    },
+    {
+      "label": "气泡确认框是否可见",
+      "name": "open",
+      "type": "switch",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": false,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": true
+    },
+    {
+      "label": "点击确认的回调",
+      "name": "onConfirm",
+      "type": "function",
+      "options": [
+        "setOpenState",
+        "false"
+      ],
+      "defaultValue": "",
+      "isTemp": true,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    },
+    {
+      "label": "点击取消的回调",
+      "name": "onCancel",
+      "type": "function",
+      "options": [
+        "setOpenState",
+        "false"
+      ],
+      "defaultValue": "",
+      "isTemp": true,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    },
+    {
+      "label": "ok 按钮 props",
+      "name": "okButtonProps",
+      "type": "menuProps",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": true,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    },
+    {
+      "label": "cancel 按钮 props",
+      "name": "cancelButtonProps",
+      "type": "menuProps",
+      "options": [],
+      "defaultValue": "",
+      "isTemp": true,
+      "isAsync": false,
+      "isAsyncValue": false,
+      "isState": false
+    }
+  ],
+  "states": [
+    {
+      "key": "openState",
+      "capKey": "OpenState",
+      "defaultValue": "",
+      "type": "string",
+      "children": []
+    },
+    {
+      "key": "titleState",
+      "capKey": "TitleState",
+      "defaultValue": "",
+      "type": "string",
+      "children": []
+    },
+    {
+      "key": "descriptionState",
+      "capKey": "DescriptionState",
+      "defaultValue": "",
+      "type": "string",
+      "children": []
+    }
+  ],
+  "isCanvas": true,
+  "needWrap": true,
+  "haveChildren": true,
+  "defaultProps": {
+    "disabled": false
+  }
+}

@@ -1,0 +1,35 @@
+import React, { useState } from "react";
+import { useNode } from "@craftjs/core";
+
+// 动态生成的基础组件
+export const {{componentName}} = ({ {{#each props}}{{this}}, {{/each}} children }) => {
+    {{#each states}}
+        const [{{key}}, set{{capKey}}] = useState({{defaultValue}});
+    {{/each}}
+
+    const { connectors: { connect, drag } } = useNode();
+
+    return (
+        <div
+            ref={(ref) => {
+                connect(drag(ref));
+            }}
+            className="{{tailwindClass}}"
+            style={{ {{#each style}}{{key}}: "{{value}}", {{/each}} }}
+        >
+            {children}
+        </div>
+        );
+    };
+
+// 组件配置和默认属性
+{{componentName}}.craft = {
+    props: {
+    {{#each defaultProps}}
+    {{key}}: {{value}},
+    {{/each}}
+    },
+    related: {
+        settings: {{settingsName}},
+    },
+};

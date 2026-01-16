@@ -1,0 +1,29 @@
+{
+  "allowedHosts": "all",
+  "headers": {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "*",
+    "Access-Control-Allow-Headers": "*"
+  },
+  "compress": true,
+  "static": {
+    "directory": "/home/yb/public",
+    "publicPath": "sss/"
+  },
+  "client": {
+    "webSocketURL": {},
+    "overlay": {
+      "errors": true,
+      "warnings": false
+    }
+  },
+  "devMiddleware": {
+    "publicPath": ""
+  },
+  "https": false,
+  "host": "0.0.0.0",
+  "historyApiFallback": {
+    "disableDotRule": true,
+    "index": "/"
+  }
+}
